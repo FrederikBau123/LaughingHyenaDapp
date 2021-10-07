@@ -1,0 +1,18 @@
+{
+  "CONTRACT_ADDRESS": "0x49aeada9bB99E75e9853FfeB2Dda28878785264d",
+  "SCAN_LINK": "https://rinkeby.etherscan.io/address/0x49aeada9bb99e75e9853ffeb2dda28878785264d",
+  "NETWORK": {
+    "NAME": "Ethereum",
+    "SYMBOL": "ETH",
+    "ID": 4
+  },
+  "NFT_NAME": "Laughing Hyenas",
+  "SYMBOL": "Laughing Hyena",
+  "MAX_SUPPLY": 10000,
+  "WEI_COST": 50000000000000000,
+  "DISPLAY_COST": 0.05,
+  "GAS_LIMIT": 285000,
+  "MARKETPLACE": "Opeansea",
+  "MARKETPLACE_LINK": "https://testnets.opensea.io/collection/laughinghyena50",
+  "SHOW_BACKGROUND": true
+}
