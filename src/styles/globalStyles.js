@@ -2,11 +2,11 @@ import styled from "styled-components";
 
 // Used for wrapping a page component
 export const Screen = styled.div`
+  overflow-x:hidden;
   background-color: var(--primary);
   background-image: ${({ image }) => (image ? `url(${image})` : "none")};
   background-size: cover;
   background-position: center;
-  width: 100%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -67,6 +67,17 @@ export const TextDescription = styled.p`
   color: var(--primary-text);
   font-size: 16px;
   line-height: 1.6;
+`;
+
+export const TextDescription2 = styled.p`
+  color: white;
+  font-size: 72px;
+  font-weight: 900;
+`;
+export const TextDescription3 = styled.p`
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
 `;
 
 export const StyledClickable = styled.div`

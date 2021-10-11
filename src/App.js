@@ -59,7 +59,6 @@ export const ResponsiveWrapper = styled.div`
   flex-direction: column;
   justify-content: stretched;
   align-items: stretched;
-  width: 100%;
   @media (min-width: 767px) {
     flex-direction: row;
   }
@@ -67,9 +66,10 @@ export const ResponsiveWrapper = styled.div`
 
 export const StyledLogo = styled.img`
   @media (min-width: 350px) {
-    width:400px;
+    width:350px;
   }
   @media (min-width: 767px) {
+      width:720px;
   }
   transition: width 0.5s;
   transition: height 0.5s;
@@ -86,6 +86,17 @@ export const StyledImg = styled.img`
   }
   @media (min-width: 1000px) {
     width: 300px;
+  }
+  transition: width 0.5s;
+`;
+export const StyledImg2 = styled.img`
+  border-radius: 27px;
+  width: 200px;
+  @media (min-width: 900px) {
+    width: 250px;
+  }
+  @media (min-width: 1000px) {
+    width: 540px;
   }
   transition: width 0.5s;
 `;
@@ -403,6 +414,56 @@ function App() {
             gas limit.
           </s.TextDescription>
         </s.Container>
+      </s.Container>
+      <s.SpacerLarge />
+      <s.SpacerLarge />
+      <s.SpacerLarge />
+      <s.SpacerLarge />
+      <s.SpacerLarge />
+      <s.Container
+        flex={1}
+        ai={"center"}
+        style={{ backgroundColor: "var(--primary)" }}
+        image={CONFIG.SHOW_BACKGROUND ? "/config/images/bg.png" : null}
+      >
+          <s.Container
+            flex={2}
+            ai={"center"}
+            style={{ padding: 24, backgroundColor: "#191919" }}
+            image={CONFIG.SHOW_BACKGROUND ? "/config/images/bg.png" : null}
+          >
+            <ResponsiveWrapper flex={1} style={{ padding: 240 }} test>
+              <s.Container flex={1} jc={"center"} ai={"center"}>
+                <StyledImg2 alt={"example"} src={"/config/images/41.png"} />
+              </s.Container>
+              <s.Container flex={1} jc={"center"} ai={"center"}>
+              <s.TextDescription2
+                style={{
+                  textAlign: "center"
+                }}
+              >
+                What are Laughing Hyenas ?
+              </s.TextDescription2>
+                <s.SpacerLarge />
+              <s.TextDescription3
+                style={{
+                  textAlign: "center"
+                }}
+              >
+                A collection of 10,000 hyenas, laughing their way to freedom on the ethereum savannas.
+                The Laughing Hyenas are randomly generated using 140+ unique attributes.
+              </s.TextDescription3>
+                <s.SpacerLarge />
+              <s.TextDescription3
+                style={{
+                  textAlign: "center"
+                }}
+              >
+                What are Laughing Hyenas ?  What are Laughing Hyenas ?  What are Laughing Hyenas ?
+              </s.TextDescription3>
+              </s.Container>
+            </ResponsiveWrapper>
+         </s.Container>
       </s.Container>
     </s.Screen>
   );
