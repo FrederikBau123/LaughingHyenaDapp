@@ -391,7 +391,6 @@ function App() {
             <StyledImg
               alt={"example"}
               src={"/config/images/example.gif"}
-              style={{ transform: "scaleX(-1)" }}
             />
           </s.Container>
         </ResponsiveWrapper>
@@ -447,7 +446,7 @@ function App() {
                   textAlign: "center"
                 }}
               >
-                What are Laughing Hyenas ?
+                About Laughing Hyenas
               </s.TextDescription2>
                 <s.SpacerLarge />
               <s.TextDescription3
