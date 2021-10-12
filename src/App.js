@@ -92,6 +92,11 @@ export const StyledImg = styled.img`
 export const StyledImg2 = styled.img`
   border-radius: 27px;
   width: 200px;
+  @media (min-width: 300px) {
+    margin-top: -200px;
+    margin-bottom: 75px;
+    width: 250px;
+  }
   @media (min-width: 900px) {
     width: 250px;
   }
@@ -432,7 +437,7 @@ function App() {
             style={{ padding: 24, backgroundColor: "#191919" }}
             image={CONFIG.SHOW_BACKGROUND ? "/config/images/bg.png" : null}
           >
-            <ResponsiveWrapper flex={1} style={{ padding: 240 }} test>
+            <ResponsiveWrapper flex={1} style={{ padding: 300 }} test>
               <s.Container flex={1} jc={"center"} ai={"center"}>
                 <StyledImg2 alt={"example"} src={"/config/images/41.png"} />
               </s.Container>
@@ -452,14 +457,6 @@ function App() {
               >
                 A collection of 10,000 hyenas, laughing their way to freedom on the ethereum savannas.
                 The Laughing Hyenas are randomly generated using 140+ unique attributes.
-              </s.TextDescription3>
-                <s.SpacerLarge />
-              <s.TextDescription3
-                style={{
-                  textAlign: "center"
-                }}
-              >
-                What are Laughing Hyenas ?  What are Laughing Hyenas ?  What are Laughing Hyenas ?
               </s.TextDescription3>
               </s.Container>
             </ResponsiveWrapper>

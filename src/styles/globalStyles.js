@@ -78,6 +78,11 @@ export const TextDescription3 = styled.p`
   color: white;
   font-size: 18px;
   font-weight: 600;
+  @media (min-width: 600px) {
+    margin-bottom: 180px;
+    font-size: 24px;
+    font-weight: 600;
+  }
 `;
 
 export const StyledClickable = styled.div`
