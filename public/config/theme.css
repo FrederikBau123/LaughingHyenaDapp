@@ -6,3 +6,95 @@
   --accent: #9B7046;
   --accent-text: #80471C;
 }
+
+
+@media (min-width: 600px) {
+  .LinkButton{
+  font-size: 21px !important;
+  padding-left: 30px !important;
+  }
+}
+@media (min-width: 900px) {
+  .LinkButton{
+  font-size: 27px !important;
+  padding-left: 30px !important;
+  }
+}
+@media (min-width: 1200px) {
+  .LinkButton{
+  font-size: 35px !important;
+  padding-left: 30px !important;
+  }
+  .LinkHeader{
+    flex-direction:row !important;
+  }
+  .headerLogo{
+    margin-left: -60px!important;
+    width:409px!important;
+    height:60px!important;
+  }
+  .headerSocialsTwitter{
+    width:75px!important;
+    height:75px!important;
+  }
+  .headerSocialsDiscord{
+    width:60px!important;
+    height:60px!important;
+  }
+}
+
+.ElementDivHeaderLogo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ElementDivHeaderLinks{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 3vw;
+  margin-right: 3vw;
+}
+.ElementDivHeaderSocials{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ .LinkButton{
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  padding-left: 12px;
+  border:none;
+  background: none;
+  transition-duration: 0.3s;
+}
+.LinkButton:hover {
+  color:#80471C;
+}
+.LinkButtonActive{
+ color:#80471C;
+}
+
+.LinkHeader{
+  background-color:black;
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  min-height: 120px;
+  justify-content: center;
+  align-items: center;
+  }
+.headerLogo{
+  width:302px;
+  height:45px;
+}
+
+.headerSocialsTwitter{
+  width:37.5px;
+  height:37.5px;
+}
+.headerSocialsDiscord{
+  width:30px;
+  height:30px;
+}
