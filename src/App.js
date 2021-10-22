@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 //import Home from './home.js'
 import Mint from './mint.js'
 import About from './about.js'
-//import Lore from './lore.js'
+import Team from './team.js'
 //import RoadMap from './roadmap.js'
 import LinkHeader from './linkHeader.js'
 
@@ -73,7 +73,7 @@ export default function App() {
       return (
         <div>
         <LinkHeader homePageState={homePageState} mintState={mintState} aboutState={aboutState} loreState={loreState} roadMapState={roadMapState} handleHomePage={handleHomePage} handleMint={handleMint} handleAbout={handleAbout} handleLore={handleLore} handleRoadMap={handleRoadMap} />
-        <About  /> 
+        <About  />
         </div>
       );
     }
@@ -81,7 +81,7 @@ export default function App() {
       return (
         <div>
         <LinkHeader homePageState={homePageState} mintState={mintState} aboutState={aboutState} loreState={loreState} roadMapState={roadMapState} handleHomePage={handleHomePage} handleMint={handleMint} handleAbout={handleAbout} handleLore={handleLore} handleRoadMap={handleRoadMap} />
-      //  {/* <Lore  /> */}
+        <Team  />
         </div>
       );
     }

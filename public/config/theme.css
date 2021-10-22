@@ -7,41 +7,10 @@
   --accent-text: #80471C;
 }
 
+a:link {
+  text-decoration: none;
+}
 
-@media (min-width: 600px) {
-  .LinkButton{
-  font-size: 21px !important;
-  padding-left: 30px !important;
-  }
-}
-@media (min-width: 900px) {
-  .LinkButton{
-  font-size: 27px !important;
-  padding-left: 30px !important;
-  }
-}
-@media (min-width: 1200px) {
-  .LinkButton{
-  font-size: 35px !important;
-  padding-left: 30px !important;
-  }
-  .LinkHeader{
-    flex-direction:row !important;
-  }
-  .headerLogo{
-    margin-left: -60px!important;
-    width:409px!important;
-    height:60px!important;
-  }
-  .headerSocialsTwitter{
-    width:75px!important;
-    height:75px!important;
-  }
-  .headerSocialsDiscord{
-    width:60px!important;
-    height:60px!important;
-  }
-}
 
 .ElementDivHeaderLogo{
   display: flex;
@@ -97,4 +66,241 @@
 .headerSocialsDiscord{
   width:30px;
   height:30px;
+}
+
+.TeamMemberContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 9px;
+  background-color: #80471C;
+
+}
+.TeamMemberDiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 9px;
+}
+.TeamMemberProfile{
+  display: flex;
+  flex-direction: column;
+}
+.TeamMemberName{
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  margin-top:12px;
+  color: #331800;
+}
+.TeamMemberPic{
+  border:6px #9B7046 solid;
+  border-radius: 15px;
+  margin-top: 30px;
+  width:210px;
+  height:210px;
+}
+.TeamMemberDescription{
+  margin-top:12px;
+  border:6px #9B7046 solid;
+  border-radius: 15px;
+  padding: 60px;
+  background-color: #F1DEBC;
+  color: #4B2D08;
+}
+.AboutContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 9px;
+  background-color: #80471C;
+}
+.AboutDiv{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 9px;
+}
+.AboutProfile{
+  display: flex;
+  flex-direction: column;
+}
+.AboutName{
+  text-align: center;
+  font-size: 45px;
+  font-weight: 700;
+  margin-top:12px;
+  color: #FFDBAC;
+}
+.AboutPic{
+  border:6px #9B7046 solid;
+  border-radius: 15px;
+  margin-top: 30px;
+  width:300px;
+  height:300px;
+}
+.AboutDescription{
+  margin-top:12px;
+  padding: 60px;
+  font-size: 27px;
+  font-weight: 800px;
+  color: #FFDBAC;
+  width:400px;
+}
+@media (min-width: 600px) {
+  .LinkButton{
+  font-size: 21px !important;
+  padding-left: 30px !important;
+  }
+}
+@media (min-width: 900px) {
+  .LinkButton{
+  font-size: 27px !important;
+  padding-left: 30px !important;
+  }
+}
+@media (min-width: 1100px) {
+  .LinkButton{
+  font-size: 30px !important;
+  padding-left: 30px !important;
+  }
+  .LinkHeader{
+    flex-direction:row !important;
+  }
+  .headerLogo{
+    margin-left: -60px!important;
+    width:300px!important;
+    height:45px!important;
+  }
+  .headerSocialsTwitter{
+    width:75px!important;
+    height:75px!important;
+  }
+  .headerSocialsDiscord{
+    width:60px!important;
+    height:60px!important;
+  }
+}
+@media (min-width: 1500px) {
+  .LinkButton{
+  font-size: 35px !important;
+  padding-left: 30px !important;
+  }
+  .LinkHeader{
+    flex-direction:row !important;
+  }
+  .headerLogo{
+    margin-left: -60px!important;
+    width:409px!important;
+    height:60px!important;
+  }
+  .headerSocialsTwitter{
+    width:75px!important;
+    height:75px!important;
+  }
+  .headerSocialsDiscord{
+    width:60px!important;
+    height:60px!important;
+  }
+  .TeamMemberContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 9px;
+
+  }
+  .TeamMemberDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 9px;
+  }
+  .TeamMemberPic{
+    width:210px;
+    height:210px;
+  }
+  .TeamMemberContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 9px;
+    background-color: #80471C;
+
+  }
+  .TeamMemberDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 9px;
+  }
+  .TeamMemberProfile{
+    display: flex;
+    flex-direction: column;
+  }
+  .TeamMemberName{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top:12px;
+    color: #331800;
+  }
+  .TeamMemberPic{
+    border:6px #9B7046 solid;
+    border-radius: 15px;
+    margin-top: 30px;
+    width:210px;
+    height:210px;
+  }
+  .TeamMemberDescription{
+    margin-left:30px;
+    border:6px #9B7046 solid;
+    border-radius: 15px;
+    padding: 60px;
+    background-color: #F1DEBC;
+    color: #4B2D08;
+  }
+  .AboutContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 9px;
+    background-color: #80471C;
+    min-height: 900px;
+  }
+  .AboutDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:750px;
+
+  }
+  .AboutName{
+    text-align: center;
+    font-size: 60px;
+    font-weight: 700;
+    margin-top:12px;
+    color: #FFDBAC;
+  }
+  .AboutPic{
+    border:6px #9B7046 solid;
+    border-radius: 15px;
+    margin-top: 30px;
+    width:400px;
+    height:400px;
+  }
+  .AboutDescription{
+    margin-top:12px;
+    padding: 60px;
+    font-size: 30px;
+    font-weight: 800px;
+    color: #FFDBAC;
+    width:555px;
+  }
 }
