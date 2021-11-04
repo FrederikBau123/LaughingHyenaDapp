@@ -6,20 +6,24 @@ import Team from './team.js'
 //import RoadMap from './roadmap.js'
 import LinkHeader from './linkHeader.js'
 
-
 export default function App() {
   const [homePageState, sethomePageState] = useState(false);
   const [mintState, setMintState] = useState(false);
   const [aboutState, setAboutState] = useState(true);
   const [loreState, setLoreState] = useState(false);
   const [roadMapState, setRoadMapState] = useState(false);
+  const [dropdownState, setDropdownState] = useState(false);
 
+  function toggleDropdown(){
+    setDropdownState(!dropdownState)
+  }
   function handleHomePage(){
     setMintState(false)
     sethomePageState(true)
     setAboutState(false)
     setLoreState(false)
     setRoadMapState(false)
+    setDropdownState(!dropdownState)
   }
   function handleMint(){
     setMintState(true)
@@ -27,6 +31,7 @@ export default function App() {
     setAboutState(false)
     setLoreState(false)
     setRoadMapState(false)
+    setDropdownState(!dropdownState)
   }
   function handleAbout(){
     setMintState(false)
@@ -34,6 +39,7 @@ export default function App() {
     setAboutState(true)
     setLoreState(false)
     setRoadMapState(false)
+    setDropdownState(!dropdownState)
   }
   function handleLore(){
     setMintState(false)
@@ -41,6 +47,7 @@ export default function App() {
     setAboutState(false)
     setLoreState(true)
     setRoadMapState(false)
+    setDropdownState(!dropdownState)
   }
   function handleRoadMap(){
     setMintState(false)
@@ -48,14 +55,15 @@ export default function App() {
     setAboutState(false)
     setLoreState(false)
     setRoadMapState(true)
+    setDropdownState(!dropdownState)
   }
 
 
 
     if(homePageState === true){
       return (
-        <div>
-        <LinkHeader homePageState={homePageState} mintState={mintState} aboutState={aboutState} loreState={loreState} roadMapState={roadMapState} handleHomePage={handleHomePage} handleMint={handleMint} handleAbout={handleAbout} handleLore={handleLore} handleRoadMap={handleRoadMap} />
+        <div className="screen">
+        <LinkHeader homePageState={homePageState} mintState={mintState} aboutState={aboutState} loreState={loreState} roadMapState={roadMapState} dropdownState={dropdownState} handleHomePage={handleHomePage} handleMint={handleMint} handleAbout={handleAbout} handleLore={handleLore} handleRoadMap={handleRoadMap} toggleDropdown={toggleDropdown} />
          {/* <Home  /> */}
         </div>
 
@@ -63,32 +71,32 @@ export default function App() {
     }
     if(mintState === true){
       return (
-        <div>
-        <LinkHeader homePageState={homePageState} mintState={mintState} aboutState={aboutState} loreState={loreState} roadMapState={roadMapState} handleHomePage={handleHomePage} handleMint={handleMint} handleAbout={handleAbout} handleLore={handleLore} handleRoadMap={handleRoadMap} />
+        <div className="screen">
+        <LinkHeader homePageState={homePageState} mintState={mintState} aboutState={aboutState} loreState={loreState} roadMapState={roadMapState} dropdownState={dropdownState} handleHomePage={handleHomePage} handleMint={handleMint} handleAbout={handleAbout} handleLore={handleLore} handleRoadMap={handleRoadMap} toggleDropdown={toggleDropdown} />
         <Mint  />
         </div>
       );
     }
     if(aboutState === true){
       return (
-        <div>
-        <LinkHeader homePageState={homePageState} mintState={mintState} aboutState={aboutState} loreState={loreState} roadMapState={roadMapState} handleHomePage={handleHomePage} handleMint={handleMint} handleAbout={handleAbout} handleLore={handleLore} handleRoadMap={handleRoadMap} />
+        <div className="screen">
+        <LinkHeader homePageState={homePageState} mintState={mintState} aboutState={aboutState} loreState={loreState} roadMapState={roadMapState} dropdownState={dropdownState} handleHomePage={handleHomePage} handleMint={handleMint} handleAbout={handleAbout} handleLore={handleLore} handleRoadMap={handleRoadMap} toggleDropdown={toggleDropdown} />
         <About  />
         </div>
       );
     }
     if(loreState === true){
       return (
-        <div>
-        <LinkHeader homePageState={homePageState} mintState={mintState} aboutState={aboutState} loreState={loreState} roadMapState={roadMapState} handleHomePage={handleHomePage} handleMint={handleMint} handleAbout={handleAbout} handleLore={handleLore} handleRoadMap={handleRoadMap} />
+        <div className="screen">
+        <LinkHeader homePageState={homePageState} mintState={mintState} aboutState={aboutState} loreState={loreState} roadMapState={roadMapState} dropdownState={dropdownState} handleHomePage={handleHomePage} handleMint={handleMint} handleAbout={handleAbout} handleLore={handleLore} handleRoadMap={handleRoadMap} toggleDropdown={toggleDropdown} />
         <Team  />
         </div>
       );
     }
     if(roadMapState === true){
       return (
-        <div>
-        <LinkHeader homePageState={homePageState} mintState={mintState} aboutState={aboutState} loreState={loreState} roadMapState={roadMapState} handleHomePage={handleHomePage} handleMint={handleMint} handleAbout={handleAbout} handleLore={handleLore} handleRoadMap={handleRoadMap} />
+        <div className="screen">
+        <LinkHeader homePageState={homePageState} mintState={mintState} aboutState={aboutState} loreState={loreState} roadMapState={roadMapState} dropdownState={dropdownState} handleHomePage={handleHomePage} handleMint={handleMint} handleAbout={handleAbout} handleLore={handleLore} handleRoadMap={handleRoadMap} toggleDropdown={toggleDropdown} />
       //  {/* <RoadMap  /> */}
         </div>
       );

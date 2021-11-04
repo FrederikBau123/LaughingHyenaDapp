@@ -10,7 +10,7 @@ export default function About(){
     <div className="AboutContainer">
       <div className="AboutDiv">
           <div className="AboutName"> About Laughing Hyenas</div>
-          <img className="AboutPic" src="/config/images/41.png"/>
+          <img className="AboutPic" src="/config/images/2.png"/>
       </div>
       <div className="AboutDescription">
       A collection of 10,000 hyenas, laughing their way to freedom on the ethereum savannas. The Laughing Hyenas are randomly generated using 140+ unique attributes.

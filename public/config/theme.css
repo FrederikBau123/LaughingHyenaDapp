@@ -11,6 +11,9 @@ a:link {
   text-decoration: none;
 }
 
+.screen{
+  overflow: hidden;
+}
 
 .ElementDivHeaderLogo{
   display: flex;
@@ -19,10 +22,6 @@ a:link {
 }
 .ElementDivHeaderLinks{
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 3vw;
-  margin-right: 3vw;
 }
 .ElementDivHeaderSocials{
   display: flex;
@@ -46,13 +45,9 @@ a:link {
 }
 
 .LinkHeader{
+  display: flex;
+  flex-direction: column;
   background-color:black;
-  display:flex;
-  flex-direction:column;
-  justify-content: center;
-  min-height: 120px;
-  justify-content: center;
-  align-items: center;
   }
 .headerLogo{
   width:302px;
@@ -151,6 +146,38 @@ a:link {
   color: #FFDBAC;
   width:400px;
 }
+.burger-nav{
+  display: none;
+}
+@media (max-width: 1099px) {
+  .lol{
+    display: flex;
+    justify-content: flex-end;
+  }
+  .burger-nav{
+    height:48px;
+    width:48px;
+    cursor:pointer;
+    display: block;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+  .ElementDivHeaderLinks{
+    flex-direction: column;
+    align-items: flex-start;
+    height:0px;
+    overflow: hidden;
+  }
+  .LinkButton{
+    margin-top: 15px;
+    text-align: left;
+    font-size: 21px;
+    font-weight: bolder;
+  }
+  .open{
+    height:auto;
+  }
+}
 @media (min-width: 600px) {
   .LinkButton{
   font-size: 21px !important;
@@ -162,49 +189,70 @@ a:link {
   font-size: 27px !important;
   padding-left: 30px !important;
   }
+  .TeamMemberDiv{
+    flex-direction: row;
+  }
+  .TeamMemberDescription{
+    margin-left:30px;
+    padding: 60px;
+  }
 }
 @media (min-width: 1100px) {
   .LinkButton{
-  font-size: 30px !important;
-  padding-left: 30px !important;
+  font-size: 24px;
+  padding-left: 30px ;
   }
   .LinkHeader{
-    flex-direction:row !important;
+    display:flex;
+    flex-direction:row;
+    min-height: 120px;
+    justify-content: center;
+    align-items: center;
+  }
+  .ElementDivHeaderLinks{
+    margin-left: 3vw;
+    margin-right: 3vw;
   }
   .headerLogo{
-    margin-left: -60px!important;
-    width:300px!important;
-    height:45px!important;
+    width:300px;
+    height:60px;
   }
   .headerSocialsTwitter{
-    width:75px!important;
-    height:75px!important;
+    width:75px;
+    height:75px;
   }
   .headerSocialsDiscord{
-    width:60px!important;
-    height:60px!important;
+    width:60px;
+    height:60px;
+  }
+  .TeamMemberDiv{
+    flex-direction: row;
+  }
+  .TeamMemberDescription{
+    margin-left:30px;
+    padding: 60px;
   }
 }
+
 @media (min-width: 1500px) {
   .LinkButton{
-  font-size: 35px !important;
-  padding-left: 30px !important;
+  font-size: 35px ;
+  padding-left: 30px ;
   }
   .LinkHeader{
-    flex-direction:row !important;
+    flex-direction:row ;
   }
   .headerLogo{
-    margin-left: -60px!important;
-    width:409px!important;
-    height:60px!important;
+    width:409px;
+    height:60px;
   }
   .headerSocialsTwitter{
-    width:75px!important;
-    height:75px!important;
+    width:75px;
+    height:75px;
   }
   .headerSocialsDiscord{
-    width:60px!important;
-    height:60px!important;
+    width:60px;
+    height:60px;
   }
   .TeamMemberContainer{
     display: flex;
@@ -214,11 +262,7 @@ a:link {
 
   }
   .TeamMemberDiv{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: row;
-    margin: 9px;
   }
   .TeamMemberPic{
     width:210px;
