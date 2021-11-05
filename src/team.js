@@ -7,7 +7,7 @@ export default function Team(){
       <div className="TeamMemberDiv">
         <div className="TeamMemberProfile" >
           <img className="TeamMemberPic" src="/config/images/14.png"/>
-          <a className="TeamMemberName" href="https://twitter.com/AtlasKingsman" target="_blank">  Zakattack  </a>
+          <a className="TeamMemberName" href="https://twitter.com/AtlasKingsman" target="_blank">  Atlas Kingsman  </a>
         </div>
         <div className="TeamMemberDescription">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
@@ -18,7 +18,7 @@ export default function Team(){
       </div>
       <div className="TeamMemberDiv">
         <div className="TeamMemberProfile" >
-          <img className="TeamMemberPic" src="/config/images/2.png"/>
+          <img className="TeamMemberPic" src="/config/images/36.png"/>
           <a className="TeamMemberName" href="https://twitter.com/kekmaan" target="_blank">  Kekmaan  </a>
         </div>
         <div className="TeamMemberDescription">
@@ -42,8 +42,8 @@ export default function Team(){
       </div>
       <div className="TeamMemberDiv">
         <div className="TeamMemberProfile" >
-          <img className="TeamMemberPic" src="/config/images/44.png"/>
-          <a className="TeamMemberName" href="https://twitter.com/mrknfts" target="_blank">  Kochart  </a>
+          <img className="TeamMemberPic" src="/config/images/2.png"/>
+          <a className="TeamMemberName" target="_blank">  Kochart  </a>
         </div>
         <div className="TeamMemberDescription">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
