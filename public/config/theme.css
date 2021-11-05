@@ -149,6 +149,7 @@ a:link {
 .burger-nav{
   display: none;
 }
+
 @media (max-width: 1099px) {
   .lol{
     display: flex;
@@ -177,6 +178,45 @@ a:link {
   .open{
     height:auto;
   }
+}
+.RoadmapContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #80471C;
+}
+.RoadmapTitle{
+  color: #F1DEBC;
+  font-size: 45px;
+  font-weight: bolder;
+  margin-top:12px;
+}
+.RoadmapDiv{
+  margin:9px;
+  padding: 12px;
+  color: #4B2D08;
+  width: 300px;
+  height: 300px;
+  border:6px #9B7046 solid;
+  background-color: #F1DEBC;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.RoadmapDivTitle{
+  font-size: 33px;
+
+}
+.RoadmapDivDescription{
+  font-size: 18px;
+  margin-top:9px;
+  line-height: 1.3;
+}
+.RoadmapTopDiv{
+}
+.RoadmapBottomDiv{
 }
 @media (min-width: 600px) {
   .LinkButton{
@@ -231,6 +271,22 @@ a:link {
   .TeamMemberDescription{
     margin-left:30px;
     padding: 60px;
+  }
+  .RoadmapTitle{
+    font-size: 50px;
+    margin-bottom: 21px;
+  }
+  .RoadmapDiv{
+    width: 300px;
+    height: 300px;
+  }
+  .RoadmapTopDiv{
+    display: flex;
+    flex-direction: row;
+  }
+  .RoadmapBottomDiv{
+    display: flex;
+    flex-direction: row;
   }
 }
 
@@ -346,5 +402,32 @@ a:link {
     font-weight: 800px;
     color: #FFDBAC;
     width:555px;
+  }
+  .RoadmapContainer{
+    height: 100vh;
+  }
+  .RoadmapTitle{
+    font-size: 60px;
+    margin-top: -120px;
+    margin-bottom: 21px;
+  }
+  .RoadmapDiv{
+    width: 400px;
+    height: 360px;
+  }
+  .RoadmapDivTitle{
+    font-size: 33px;
+
+  }
+  .RoadmapDivDescription{
+    font-size: 21px;
+  }
+  .RoadmapTopDiv{
+    display: flex;
+    flex-direction: row;
+  }
+  .RoadmapBottomDiv{
+    display: flex;
+    flex-direction: row;
   }
 }

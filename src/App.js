@@ -3,7 +3,7 @@ import React, { useEffect, useState, useRef } from "react";
 import Mint from './mint.js'
 import About from './about.js'
 import Team from './team.js'
-//import RoadMap from './roadmap.js'
+import RoadMap from './roadmap.js'
 import LinkHeader from './linkHeader.js'
 
 export default function App() {
@@ -97,7 +97,7 @@ export default function App() {
       return (
         <div className="screen">
         <LinkHeader homePageState={homePageState} mintState={mintState} aboutState={aboutState} loreState={loreState} roadMapState={roadMapState} dropdownState={dropdownState} handleHomePage={handleHomePage} handleMint={handleMint} handleAbout={handleAbout} handleLore={handleLore} handleRoadMap={handleRoadMap} toggleDropdown={toggleDropdown} />
-      //  {/* <RoadMap  /> */}
+        <RoadMap  />
         </div>
       );
     }
