@@ -9,7 +9,7 @@ export default function Team(){
       <div className="TeamMemberDiv">
         <div className="TeamMemberProfile" >
         <a className="linkTeam" href="https://twitter.com/AtlasKingsman" target="_blank">
-        <img className="TeamMemberPic" src="/config/images/17.png"/ >
+        <img className="TeamMemberPic" src="/config/images/76.png"/ >
         </a>
           <a className="TeamMemberName">  Atlas Kingsman  </a>
         </div>
@@ -17,7 +17,7 @@ export default function Team(){
       <div className="TeamMemberDiv">
         <div className="TeamMemberProfile" >
         <a className="linkTeam" href="https://twitter.com/kekmaan" target="_blank">
-        <img className="TeamMemberPic" src="/config/images/27.png"/ >
+        <img className="TeamMemberPic" src="/config/images/60.png"/ >
         </a>
           <a className="TeamMemberName">  Kekmaan  </a>
         </div>
@@ -25,7 +25,7 @@ export default function Team(){
       <div className="TeamMemberDiv">
         <div className="TeamMemberProfile" >
           <a className="linkTeam" href="https://twitter.com/mrknfts" target="_blank">
-          <img className="TeamMemberPic" src="/config/images/45.png"/ >
+          <img className="TeamMemberPic" src="/config/images/43.png"/ >
           </a>
           <a className="TeamMemberName" >  Kendez  </a>
         </div>
@@ -33,7 +33,7 @@ export default function Team(){
       <div className="TeamMemberDiv">
         <div className="TeamMemberProfile" >
         <a className="linkTeam">
-        <img className="TeamMemberPic" src="/config/images/58.png"/ >
+        <img className="TeamMemberPic" src="/config/images/41.png"/ >
         </a>
           <a className="TeamMemberName">  Kochart  </a>
         </div>
