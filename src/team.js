@@ -3,55 +3,46 @@ import React, { useEffect, useState, useRef } from "react";
 export default function Team(){
 
   return(
+    <div className="TeamMemberScreen">
+    <div className="TeamMemberTitle">Team Members</div>
     <div className="TeamMemberContainer">
       <div className="TeamMemberDiv">
         <div className="TeamMemberProfile" >
-          <img className="TeamMemberPic" src="/config/images/14.png"/>
-          <a className="TeamMemberName" href="https://twitter.com/AtlasKingsman" target="_blank">  Atlas Kingsman  </a>
-        </div>
-        <div className="TeamMemberDescription">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-         ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-         nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <a className="linkTeam" href="https://twitter.com/AtlasKingsman" target="_blank">
+        <img className="TeamMemberPic" src="/config/images/17.png"/ >
+        </a>
+          <a className="TeamMemberName">  Atlas Kingsman  </a>
         </div>
       </div>
       <div className="TeamMemberDiv">
         <div className="TeamMemberProfile" >
-          <img className="TeamMemberPic" src="/config/images/36.png"/>
-          <a className="TeamMemberName" href="https://twitter.com/kekmaan" target="_blank">  Kekmaan  </a>
-        </div>
-        <div className="TeamMemberDescription">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-         ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-         nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <a className="linkTeam" href="https://twitter.com/kekmaan" target="_blank">
+        <img className="TeamMemberPic" src="/config/images/27.png"/ >
+        </a>
+          <a className="TeamMemberName">  Kekmaan  </a>
         </div>
       </div>
       <div className="TeamMemberDiv">
         <div className="TeamMemberProfile" >
-          <img className="TeamMemberPic" src="/config/images/27.png"/>
-          <a className="TeamMemberName" href="https://twitter.com/mrknfts" target="_blank">  Kendez  </a>
-        </div>
-        <div className="TeamMemberDescription">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-         ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-         nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          <a className="linkTeam" href="https://twitter.com/mrknfts" target="_blank">
+          <img className="TeamMemberPic" src="/config/images/45.png"/ >
+          </a>
+          <a className="TeamMemberName" >  Kendez  </a>
         </div>
       </div>
       <div className="TeamMemberDiv">
         <div className="TeamMemberProfile" >
-          <img className="TeamMemberPic" src="/config/images/2.png"/>
-          <a className="TeamMemberName" target="_blank">  Kochart  </a>
-        </div>
-        <div className="TeamMemberDescription">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-         ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-         nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <a className="linkTeam">
+        <img className="TeamMemberPic" src="/config/images/58.png"/ >
+        </a>
+          <a className="TeamMemberName">  Kochart  </a>
         </div>
       </div>
     </div>
+    </div>
   )
 }
+14
+36
+27
+2

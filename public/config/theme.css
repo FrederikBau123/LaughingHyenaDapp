@@ -62,14 +62,25 @@ a:link {
   width:30px;
   height:30px;
 }
-
+.TeamMemberScreen{
+    background-color: #80471C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.TeamMemberTitle{
+  color: #F1DEBC;
+  font-size: 45px;
+  font-weight: bolder;
+  margin-top:12px;
+}
 .TeamMemberContainer{
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: center;
   padding: 9px;
-  background-color: #80471C;
-
 }
 .TeamMemberDiv{
   display: flex;
@@ -78,23 +89,26 @@ a:link {
   flex-direction: column;
   margin: 9px;
 }
+.linkTeam{
+  border-radius: 15px;
+  width:210px;
+  height:210px;
+}
 .TeamMemberProfile{
   display: flex;
   flex-direction: column;
 }
 .TeamMemberName{
   text-align: center;
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 700;
   margin-top:12px;
   color: #331800;
 }
 .TeamMemberPic{
-  border:6px #9B7046 solid;
-  border-radius: 15px;
-  margin-top: 30px;
   width:210px;
   height:210px;
+  border-radius: 15px;
 }
 .TeamMemberDescription{
   margin-top:12px;
@@ -227,6 +241,22 @@ text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40
   }
 }
 @media (min-width: 900px) {
+  .TeamMemberTitle{
+    color: #F1DEBC;
+    font-size: 60px;
+    font-weight: bolder;
+    margin-top:60px;
+  }
+  .linkTeam{
+  transition: box-shadow 0.4s ease-in-out;
+  outline:none;
+}
+.linkTeam:hover  { box-shadow:0 -2px 8px #FFF, 0 -4px 20px #ff0, 0 -20px 40px #ff8000, 0 -36px 80px #F00; }
+  .TeamMemberContainer{
+    flex-direction: row;
+    height:100vh;
+    margin-top:-60px;
+  }
   .LinkButton{
   font-size: 27px !important;
   padding-left: 30px !important;
@@ -313,26 +343,7 @@ text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40
     height:60px;
   }
   .TeamMemberContainer{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 9px;
-
-  }
-  .TeamMemberDiv{
-    flex-direction: row;
-  }
-  .TeamMemberPic{
-    width:210px;
-    height:210px;
-  }
-  .TeamMemberContainer{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 9px;
-    background-color: #80471C;
-
+    height:100vh
   }
   .TeamMemberDiv{
     display: flex;
@@ -341,23 +352,20 @@ text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40
     flex-direction: row;
     margin: 9px;
   }
+  .linkTeam{
+    width:360px;
+    height:360px;
+  }
   .TeamMemberProfile{
     display: flex;
     flex-direction: column;
   }
   .TeamMemberName{
-    text-align: center;
-    font-size: 30px;
-    font-weight: 700;
-    margin-top:12px;
-    color: #331800;
+    font-size: 45px;
   }
   .TeamMemberPic{
-    border:6px #9B7046 solid;
-    border-radius: 15px;
-    margin-top: 30px;
-    width:210px;
-    height:210px;
+    width:360px;
+    height:360px;
   }
   .TeamMemberDescription{
     margin-left:30px;
