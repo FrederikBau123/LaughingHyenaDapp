@@ -89,7 +89,9 @@ export default function App() {
       return (
         <div className="screen">
         <LinkHeader homePageState={homePageState} mintState={mintState} aboutState={aboutState} loreState={loreState} roadMapState={roadMapState} dropdownState={dropdownState} handleHomePage={handleHomePage} handleMint={handleMint} handleAbout={handleAbout} handleLore={handleLore} handleRoadMap={handleRoadMap} toggleDropdown={toggleDropdown} />
-        <Team  />
+        <div>
+          <Team  />
+        </div>
         </div>
       );
     }
