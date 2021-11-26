@@ -1,7 +1,8 @@
 import React, { useEffect, useState, useRef } from "react";
+import { isMobile } from "react-device-detect";
 
-
-
+import bgdesktop from './bghyena.png'
+import bgphone from './bg.png'
 
 
 
@@ -15,6 +16,7 @@ export default function About(){
       <div className="AboutDescription">
       A collection of 10,000 hyenas, laughing their way to freedom on the ethereum savannas. The Laughing Hyenas are randomly generated using 140+ unique attributes.
       </div>
+      <img className="aboutimg"  src={isMobile ? '' : bgphone}/>
     </div>
   )
 }
