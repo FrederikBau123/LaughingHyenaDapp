@@ -1,10 +1,11 @@
 import React, { useEffect, useState, useRef } from "react";
-//import Home from './home.js'
+import Home from './home.js'
 import Mint from './mint.js'
 import About from './about.js'
 import Team from './team.js'
 import RoadMap from './roadmap.js'
 import LinkHeader from './linkHeader.js'
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 export default function App() {
   const [homePageState, sethomePageState] = useState(false);
@@ -17,90 +18,51 @@ export default function App() {
   function toggleDropdown(){
     setDropdownState(!dropdownState)
   }
-  function handleHomePage(){
-    setMintState(false)
-    sethomePageState(true)
-    setAboutState(false)
-    setLoreState(false)
-    setRoadMapState(false)
-    setDropdownState(!dropdownState)
-  }
-  function handleMint(){
-    setMintState(true)
-    sethomePageState(false)
-    setAboutState(false)
-    setLoreState(false)
-    setRoadMapState(false)
-    setDropdownState(!dropdownState)
-  }
-  function handleAbout(){
-    setMintState(false)
-    sethomePageState(false)
-    setAboutState(true)
-    setLoreState(false)
-    setRoadMapState(false)
-    setDropdownState(!dropdownState)
-  }
-  function handleLore(){
-    setMintState(false)
-    sethomePageState(false)
-    setAboutState(false)
-    setLoreState(true)
-    setRoadMapState(false)
-    setDropdownState(!dropdownState)
-  }
-  function handleRoadMap(){
-    setMintState(false)
-    sethomePageState(false)
-    setAboutState(false)
-    setLoreState(false)
-    setRoadMapState(true)
-    setDropdownState(!dropdownState)
-  }
+
+  const SmoothScroll = () => (
+    <div className="screen">
+    <div className="LinkHeader">
+        <div className="ElementDivHeaderLogo">
+          <img className ="headerLogo" src={"/config/images/logo.png"}/>
+        </div>
+        <div className="lol">
+          <img src="/config/images/menu.png" className="burger-nav" onClick={toggleDropdown}></img>
+        </div>
+        <nav className={`ElementDivHeaderLinks ${dropdownState ? "open" : ""}`}>
+          <AnchorLink className="LinkButton" href='#things'>Home</AnchorLink>
+          <AnchorLink className="LinkButton"  href='#mint'>Mint</AnchorLink>
+          <AnchorLink className="LinkButton" href='#about'>About</AnchorLink>
+          <AnchorLink className="LinkButton" href='#roadmap'>Roadmap</AnchorLink>
+          <AnchorLink className="LinkButton" href='#team'>Team</AnchorLink>
+        </nav >
+        <div className="ElementDivHeaderSocials">
+          <a href="https://twitter.com/LaughingHyenasC" target="_blank"><img className="headerSocialsTwitter" src={"/config/images/twitter.png"}/></a>
+          <a href="default.asp" target="_blank"><img className="headerSocialsDiscord" src={"/config/images/discord.png"}/></a>
+        </div>
+    </div>
+    <section id='home'>
+      <Home     />
+    </section>
+    <section id='mint'>
+      <Mint     />
+    </section>
+    <section id='about'>
+      <About     />
+    </section>
+    <section id='roadmap'>
+      <RoadMap     />
+    </section>
+    <section id='team'>
+      <Team     />
+    </section>
+    </div>
+)
 
 
 
-    if(homePageState === true){
       return (
-        <div className="screen">
-        <LinkHeader homePageState={homePageState} mintState={mintState} aboutState={aboutState} loreState={loreState} roadMapState={roadMapState} dropdownState={dropdownState} handleHomePage={handleHomePage} handleMint={handleMint} handleAbout={handleAbout} handleLore={handleLore} handleRoadMap={handleRoadMap} toggleDropdown={toggleDropdown} />
-         {/* <Home  /> */}
-        </div>
+
+        <SmoothScroll />
 
       );
-    }
-    if(mintState === true){
-      return (
-        <div className="screen">
-        <LinkHeader homePageState={homePageState} mintState={mintState} aboutState={aboutState} loreState={loreState} roadMapState={roadMapState} dropdownState={dropdownState} handleHomePage={handleHomePage} handleMint={handleMint} handleAbout={handleAbout} handleLore={handleLore} handleRoadMap={handleRoadMap} toggleDropdown={toggleDropdown} />
-        <Mint  />
-        </div>
-      );
-    }
-    if(aboutState === true){
-      return (
-        <div className="screen">
-        <LinkHeader homePageState={homePageState} mintState={mintState} aboutState={aboutState} loreState={loreState} roadMapState={roadMapState} dropdownState={dropdownState} handleHomePage={handleHomePage} handleMint={handleMint} handleAbout={handleAbout} handleLore={handleLore} handleRoadMap={handleRoadMap} toggleDropdown={toggleDropdown} />
-        <About  />
-        </div>
-      );
-    }
-    if(loreState === true){
-      return (
-        <div className="screen">
-        <LinkHeader homePageState={homePageState} mintState={mintState} aboutState={aboutState} loreState={loreState} roadMapState={roadMapState} dropdownState={dropdownState} handleHomePage={handleHomePage} handleMint={handleMint} handleAbout={handleAbout} handleLore={handleLore} handleRoadMap={handleRoadMap} toggleDropdown={toggleDropdown} />
-        <div>
-          <Team  />
-        </div>
-        </div>
-      );
-    }
-    if(roadMapState === true){
-      return (
-        <div className="screen">
-        <LinkHeader homePageState={homePageState} mintState={mintState} aboutState={aboutState} loreState={loreState} roadMapState={roadMapState} dropdownState={dropdownState} handleHomePage={handleHomePage} handleMint={handleMint} handleAbout={handleAbout} handleLore={handleLore} handleRoadMap={handleRoadMap} toggleDropdown={toggleDropdown} />
-        <RoadMap  />
-        </div>
-      );
-    }
 }

@@ -4,12 +4,11 @@ import React, {
   useRef
 } from "react";
 
-import ParticlesBg from "particles-bg";
-import icon from "./bone.png";
-import meat from "./meat.png";
+//import ParticlesBg from "particles-bg";
+//import icon from "./bone.png";
+//import meat from "./meat.png";
 
-
-  let config = {
+{/*  let config = {
      num: [1, 2],
      rps: 0.9,
      radius: [1, 10],
@@ -38,7 +37,8 @@ import meat from "./meat.png";
       cross: "dead",
       random: 10,
       g: 0.3
-    };
+    };<ParticlesBg className="particlesTeam" type="custom" config={config} bg={true} /><ParticlesBg className="particlesTeam" type="custom" config={config2} bg={true} />*/}
+
 
 
 export default function Team() {
@@ -58,7 +58,7 @@ export default function Team() {
     target = "_blank" >
     <
     img className = "TeamMemberPic"
-    src = "/config/images/76.png" / >
+    src = "/config/images/22.png" / >
     <
     /a> <
     a className = "TeamMemberName" > Atlas Kingsman < /a> < /
@@ -108,8 +108,7 @@ export default function Team() {
     div > <
     /div> < /
     div >
-            <ParticlesBg className="particlesTeam" type="custom" config={config} bg={true} /><ParticlesBg className="particlesTeam" type="custom" config={config2} bg={true} />  <
-    /div>
+    < /div>
 
   )
 }

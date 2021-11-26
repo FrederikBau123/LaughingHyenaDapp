@@ -203,6 +203,7 @@ return (
       style={{ padding: 24, backgroundColor: "var(--primary)" }}
       image={CONFIG.SHOW_BACKGROUND ? "/config/images/bg.png" : null}
     >
+      <div className="mintTitle"> Mint a Laughing Hyena </div>
       <s.SpacerSmall />
       <ResponsiveWrapper flex={1} style={{ padding: 24 }} test>
         <s.Container flex={1} jc={"center"} ai={"center"}>
