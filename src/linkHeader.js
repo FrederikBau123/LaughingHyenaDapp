@@ -20,7 +20,7 @@ export default function LinkHeader({homePageState, mintState, aboutState, loreSt
         </nav >
         <div className="ElementDivHeaderSocials">
           <a href="https://twitter.com/LaughingHyenasC" target="_blank"><img className="headerSocialsTwitter" src={"/config/images/twitter.png"}/></a>
-          <a href="default.asp" target="_blank"><img className="headerSocialsDiscord" src={"/config/images/discord.png"}/></a>
+          <a href="https://Discord.gg/hyenasnft" target="_blank"><img className="headerSocialsDiscord" src={"/config/images/discord.png"}/></a>
         </div>
     </div>
   )

@@ -10,7 +10,7 @@ export default function About(){
   return(
     <div className="AboutContainer">
       <div className="AboutDiv">
-          <div className="AboutName"> About Laughing Hyenas</div>
+          <div className="title"> About Laughing Hyenas</div>
           <img className="AboutPic" src="/config/images/90.png"/>
       </div>
       <div className="AboutDescription">

@@ -5,7 +5,7 @@ import React, { useEffect, useState, useRef } from "react";
 export default function Roadmap(){
   return(
     <div className="RoadmapContainer">
-      <div className="RoadmapTitle"> ROADMAP</div>
+      <div className="title"> Roadmap</div>
       <div className="RoadmapTopDiv">
         <div className="RoadmapDiv">
           <div className="RoadmapDivTitle">0%</div>

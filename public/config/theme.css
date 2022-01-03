@@ -6,7 +6,17 @@
   --accent: #9B7046;
   --accent-text: #80471C;
 }
-
+@font-face {
+  font-family: bubblegum;
+  src: url(Bubblegum.ttf);
+}
+#root{
+  font-family: bubblegum;
+  z-index: 1;
+}
+.particles-bg-canvas-self{
+position: fixed !important;
+}
 .bgimg{
   width:100vw;
   height:100vh;
@@ -14,11 +24,6 @@
 .bg{
   background-color: #80471C
 }
-
-.mintTitle{
-  font-size: 40px; font-weight: 700; margin-top:12px; color: #FFDBAC; text-align: center;
-}
-
 
 a:link {
   text-decoration: none;
@@ -48,9 +53,8 @@ a:link {
   align-items: center;
 }
  .LinkButton{
-  color: white;
+  color: var(--secondary);
   font-size: 18px;
-  font-weight: 600;
   padding-left: 12px;
   border:none;
   background: none;
@@ -89,11 +93,13 @@ a:link {
     align-items: center;
     flex-direction: column;
 }
-.TeamMemberTitle{
+.title{
   color: #F1DEBC;
   font-size: 45px;
-  font-weight: bolder;
   margin-top:12px;
+  margin-bottom:12px;
+  text-shadow:5px 5px 25px #F1DEBC;
+  text-align: center;
 }
 .TeamMemberContainer{
   display: flex;
@@ -108,6 +114,7 @@ a:link {
   align-items: center;
   flex-direction: column;
   margin: 9px;
+  position: relative;
 }
 .linkTeam{
   border-radius: 15px;
@@ -121,9 +128,9 @@ a:link {
 .TeamMemberName{
   text-align: center;
   font-size: 24px;
-  font-weight: 700;
   margin-top:12px;
-  color: #80471C;
+  color: var(--secondary);
+  text-shadow:5px 5px 25px #F1DEBC;
 }
 .TeamMemberPic{
   width:210px;
@@ -137,6 +144,132 @@ a:link {
   padding: 60px;
   background-color: #F1DEBC;
   color: #4B2D08;
+}
+.TeamMemberPopup1{
+  position: absolute;
+  bottom:100%;
+  left:66%;
+  border:3px var(--secondary) solid;
+  background-color: #80471C;
+  box-shadow:5px 5px 25px #F1DEBC;
+  padding: 80px 50px;
+  margin: 30px auto;
+  border-radius: 50%;
+  text-align: center;
+  width:540px;
+  height:420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--secondary);
+}
+.TeamMemberPopup2{
+  position: absolute;
+  bottom:115%;
+  border:3px var(--secondary) solid;
+  background-color: #80471C;
+  box-shadow:5px 5px 25px #F1DEBC;
+  padding: 80px 50px;
+  margin: 30px auto;
+  border-radius: 50%;
+  text-align: center;
+  width:540px;
+  height:420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--secondary);
+}
+.TeamMemberPopup3{
+  position: absolute;
+  bottom:100%;
+  right:66%;
+  border:3px var(--secondary) solid;
+  background-color: #80471C;
+  box-shadow:5px 5px 25px #F1DEBC;
+  padding: 80px 50px;
+  margin: 30px auto;
+  border-radius: 50%;
+  text-align: center;
+  width:540px;
+  height:420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--secondary);
+}
+.TeamMemberPopupTitle{
+  font-size: 24px;
+  text-shadow:5px 5px 25px #F1DEBC;
+  margin: 15px;
+}
+.TeamMemberPopupDesc{
+  font-size: 18px;
+
+}
+.circle1 {
+  border:3px var(--secondary) solid;
+  background-color: #80471C;
+  box-shadow:5px 5px 25px #F1DEBC;
+  position: absolute;
+  width: 25px;
+  padding: 20px;
+  border-radius: 50%;
+  right: -15px;
+  bottom: 23px;
+}
+.circle2 {
+  border:3px var(--secondary) solid;
+  background-color: #80471C;
+  box-shadow:5px 5px 25px #F1DEBC;
+  position: absolute;
+  width: 5px;
+  padding: 10px 15px;
+  border-radius: 50%;
+  right: -60px;
+  bottom: 5px;
+}
+.circle3 {
+  border:3px var(--secondary) solid;
+  background-color: #80471C;
+  box-shadow:5px 5px 25px #F1DEBC;
+  position: absolute;
+  width: 25px;
+  padding: 20px;
+  border-radius: 50%;
+  left: -15px;
+  bottom: 23px;
+}
+.circle4 {
+  border:3px var(--secondary) solid;
+  background-color: #80471C;
+  box-shadow:5px 5px 25px #F1DEBC;
+  position: absolute;
+  width: 5px;
+  padding: 10px 15px;
+  border-radius: 50%;
+  left: -60px;
+  bottom: 5px;
+}
+.circle5 {
+  border:3px var(--secondary) solid;
+  background-color: #80471C;
+  box-shadow:5px 5px 25px #F1DEBC;
+  position: absolute;
+  width: 25px;
+  padding: 20px;
+  border-radius: 50%;
+  bottom: -50px;
+}
+.circle6 {
+  border:3px var(--secondary) solid;
+  background-color: #80471C;
+  box-shadow:5px 5px 25px #F1DEBC;
+  position: absolute;
+  width: 5px;
+  padding: 10px 15px;
+  border-radius: 50%;
+  bottom: -80px;
 }
 .AboutContainer{
   display: flex;
@@ -161,9 +294,9 @@ a:link {
 .AboutName{
   text-align: center;
   font-size: 45px;
-  font-weight: 700;
   margin-top:12px;
   color: #FFDBAC;
+  text-shadow:5px 5px 25px #F1DEBC;
 }
 .AboutPic{
   border:6px #9B7046 solid;
@@ -176,19 +309,104 @@ a:link {
   margin-top:12px;
   padding: 60px;
   font-size: 27px;
-  font-weight: 800px;
   color: #FFDBAC;
   width:400px;
 }
 .burger-nav{
   display: none;
 }
-
-@media (max-width: 1099px) {
-  .particles-bg-canvas-self{
-  top:375px !important;
-  height:150% !important;
+.RoadmapDiv{
+  margin:12px;
+  color: #4B2D08;
+  width: 300px;
+  height: 300px;
+  border:3px #9B7046 solid;
+  background-color: #F1DEBC;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
+.RoadmapContainer{
+  padding:21px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #80471C;
+}
+.RoadmapDivTitle{
+  font-size: 33px;
+  color: #FFFFFF;
+  margin-top:12px;
+text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+
+}
+.RoadmapDivDescription{
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 12px;
+  position: relative;
+  bottom: 9px;
+}
+.LoreScreen{
+  background-color: #80471C;
+  padding:21px;
+}
+.TeamIntroTitle{
+  font-family: nosifer;
+        color: #FF0000;
+   font-size:3em;
+    -webkit-text-stroke: 0.1px rgba(246, 186, 74, 1);
+}
+
+.TeamIntroText{
+  color: #4B2D08;
+  border:3px #9B7046 solid;
+  background-color: #F1DEBC;
+  margin:12px;
+  border-radius: 9px;
+  padding: 21px;
+  line-height: 33px;
+  font-size: 24px;
+}
+
+@media (max-width:760px){
+  .TeamMemberPopup2{
+    bottom:115%;
+    padding: 80px 50px;
+    margin: 30px auto;
+    border-radius: 50%;
+    text-align: center;
+    width:300px;
+    height:450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--secondary);
+  }
+  .TeamMemberPopupTitle{
+    font-size: 18px;
+    text-shadow:5px 5px 25px #F1DEBC;
+    margin: 0px 0px 9px;
+  }
+  .TeamMemberPopupDesc{
+    font-size: 14px;
+
+  }
+  .circle5 {
+    width: 25px;
+    padding: 20px;
+    bottom: -50px;
+  }
+  .circle6 {
+    width: 5px;
+    padding: 10px 15px;
+    bottom: -80px;
+  }
+}
+@media (max-width: 1099px) {
   .lol{
     position: absolute;
     top:54px;
@@ -215,53 +433,10 @@ a:link {
     margin-top: 15px;
     text-align: left;
     font-size: 21px;
-    font-weight: bolder;
   }
   .open{
     height:auto;
   }
-}
-.RoadmapContainer{
-  padding:21px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #80471C;
-}
-.RoadmapTitle{
-  color: #F1DEBC;
-  font-size: 45px;
-  font-weight: bolder;
-  margin-top:12px;
-}
-.RoadmapDiv{
-  margin:9px;
-  padding: 12px;
-  color: #4B2D08;
-  width: 300px;
-  height: 300px;
-  border:6px #9B7046 solid;
-  background-color: #F1DEBC;
-  border-radius: 9px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-.RoadmapDivTitle{
-  font-size: 33px;
-  color: #FFFFFF;
-text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
-
-}
-.RoadmapDivDescription{
-  font-size: 18px;
-  display: flex;
-  flex-direction: column;
-}
-.RoadmapTopDiv{
-}
-.RoadmapBottomDiv{
 }
 @media (min-width: 600px) {
   .LinkButton{
@@ -270,11 +445,10 @@ text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40
   }
 }
 @media (min-width: 900px) {
-  .TeamMemberTitle{
+  .title{
     color: #F1DEBC;
     font-size: 60px;
-    font-weight: bolder;
-    margin-top:60px;
+    margin-top:24px;
   }
   .linkTeam{
   transition: box-shadow 0.4s ease-in-out;
@@ -297,9 +471,6 @@ text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40
   }
 }
 @media (min-width: 1100px) {
-  .mintTitle{
-    font-size: 50px;
-  }
   .LinkButton{
   font-size: 24px;
   padding-left: 30px ;
@@ -334,14 +505,6 @@ text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40
     margin-left:30px;
     padding: 60px;
   }
-  .RoadmapTitle{
-    font-size: 50px;
-    margin-bottom: 21px;
-  }
-  .RoadmapDiv{
-    width: 300px;
-    height: 300px;
-  }
   .RoadmapTopDiv{
     display: flex;
     flex-direction: row;
@@ -353,9 +516,6 @@ text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40
 }
 
 @media (min-width: 1500px) {
-  .mintTitle{
-    font-size: 60px;
-  }
   .bgimg{
   }
   .LinkButton{
@@ -379,9 +539,6 @@ text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40
   }
   .TeamMemberContainer{
   }
-  .particles-bg-canvas-self{
-    top:120px !important;
-}
   .TeamMemberDiv{
     display: flex;
     justify-content: center;
@@ -390,19 +547,19 @@ text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40
     margin: 9px;
   }
   .linkTeam{
-    width:360px;
-    height:360px;
+    width:300px;
+    height:300px;
   }
   .TeamMemberProfile{
     display: flex;
     flex-direction: column;
   }
   .TeamMemberName{
-    font-size: 45px;
+    font-size: 36px;
   }
   .TeamMemberPic{
-    width:360px;
-    height:360px;
+    width:300px;
+    height:300px;
   }
   .TeamMemberDescription{
     margin-left:30px;
@@ -421,39 +578,22 @@ text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40
     min-height: 900px;
   }
   .AboutDiv{
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
     width:750px;
-
   }
   .AboutName{
-    text-align: center;
     font-size: 60px;
-    font-weight: 700;
-    margin-top:12px;
-    color: #FFDBAC;
   }
   .AboutPic{
-    border:6px #9B7046 solid;
-    border-radius: 15px;
-    margin-top: 30px;
     width:400px;
     height:400px;
   }
   .AboutDescription{
-    margin-top:12px;
-    padding: 60px;
     font-size: 30px;
-    font-weight: 800px;
-    color: #FFDBAC;
     width:555px;
   }
   .RoadmapContainer{
-  }
-  .RoadmapTitle{
-    font-size: 60px;
-    margin-bottom: 21px;
   }
   .RoadmapDiv{
     width: 400px;
@@ -461,7 +601,6 @@ text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40
   }
   .RoadmapDivTitle{
     font-size: 33px;
-
   }
   .RoadmapDivDescription{
     font-size: 21px;

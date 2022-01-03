@@ -76,8 +76,8 @@ export const StyledLogo = styled.img`
 `;
 
 export const StyledImg = styled.img`
-  box-shadow: 0px 5px 11px 2px rgba(0, 0, 0, 0.7);
-  border: 4px dashed var(--secondary);
+  border:3px solid var(--secondary);
+  box-shadow: 5px 10px 30px var(--secondary);
   background-color: var(--accent);
   border-radius: 100%;
   width: 200px;
@@ -203,7 +203,7 @@ return (
       style={{ padding: 24, backgroundColor: "var(--primary)" }}
       image={CONFIG.SHOW_BACKGROUND ? "/config/images/bg.png" : null}
     >
-      <div className="mintTitle"> Mint a Laughing Hyena </div>
+      <div className="title"> Mint a Laughing Hyena </div>
       <s.SpacerSmall />
       <ResponsiveWrapper flex={1} style={{ padding: 24 }} test>
         <s.Container flex={1} jc={"center"} ai={"center"}>
@@ -218,8 +218,8 @@ return (
             backgroundColor: "var(--accent)",
             padding: 24,
             borderRadius: 24,
-            border: "4px dashed var(--secondary)",
-            boxShadow: "0px 5px 11px 2px rgba(0,0,0,0.7)",
+            border: "4px solid var(--secondary)",
+            boxShadow: "5px 10px 30px var(--secondary)",
           }}
         >
           <s.TextTitle
@@ -384,7 +384,7 @@ return (
         <s.TextDescription
           style={{
             textAlign: "center",
-            color: "var(--primary-text)",
+            color: "var(--secondary)",
           }}
         >
           Please make sure you are connected to the right network (
@@ -395,7 +395,7 @@ return (
         <s.TextDescription
           style={{
             textAlign: "center",
-            color: "var(--primary-text)",
+            color: "var(--secondary)",
           }}
         >
           We have set the gas limit to {CONFIG.GAS_LIMIT} for the contract to
