@@ -353,6 +353,10 @@ text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40
 .LoreScreen{
   background-color: #80471C;
   padding:21px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .TeamIntroTitle{
   font-family: nosifer;
@@ -370,6 +374,20 @@ text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40
   padding: 21px;
   line-height: 33px;
   font-size: 24px;
+}
+.readMoreLoreButton{
+  background-color: #4B2D08;
+  color: #F1DEBC;
+  font-size: 24px;
+  border-radius: 15px;
+  text-shadow:5px 5px 25px #F1DEBC;
+  border:3px solid var(--secondary);
+  box-shadow: 5px 10px 30px var(--secondary);
+  font-family: bubblegum;
+  padding:15px;
+  display: flex;
+  width: 15%;
+  justify-content: center;
 }
 
 @media (max-width:760px){
