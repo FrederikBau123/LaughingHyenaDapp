@@ -20,9 +20,99 @@ position: fixed !important;
 .bgimg{
   width:100vw;
   height:100vh;
+  opacity: 0.8;
 }
 .bg{
-  background-color: #80471C
+  background-color: #80471C;
+}
+
+.hyena{
+  position: absolute;
+  width:75%;
+  top:31.5vh;
+}
+.nohyena{
+  display:none;
+}
+.hyenaup{
+  animation-name            : hyenamoveup;
+    animation-duration        : 2s;
+    animation-iteration-count : 1;
+    animation-fill-mode       : forwards;
+}
+.hyenaback{
+  animation-name            : hyenamoveback;
+    animation-duration        : 2s;
+    animation-iteration-count : 1;
+    animation-fill-mode       : backwards;
+}
+
+.hyenatalkboxmain{
+  position:absolute;
+  top:23vh;
+  left:36vw;
+  width: 30%;
+  height: 32%;
+}
+
+.hyenatalkbox{
+  background-color: #481b0b;
+  color: var(--secondary);
+  font-size: 60px;
+  border-radius: 10%;
+  border:3px solid var(--secondary);
+  box-shadow: 5px 10px 30px var(--secondary);
+  font-family: bubblegum;
+  padding:60px;
+  display: flex;
+  width: 100%;
+  height:100%;
+  justify-content: center;
+  text-align: center;
+}
+.hyenatalkboxpoint{
+  display: block;
+  width: 0;
+	height: 0;
+	border-left: 3vh solid transparent;
+	border-right: 3vh solid transparent;
+	border-top: 10vh solid #481b0b;
+	position: relative;
+  bottom:20%;
+  left:-9%;
+	transform: rotate(60deg);
+}
+.talkboxadd{
+  animation-name            : talkboxadd;
+  animation-duration        : 1s;
+  animation-delay           : 1s;
+  animation-iteration-count : 1;
+  animation-fill-mode       : backwards;
+}
+.talkboxremove{
+  animation-name            : talkboxremove;
+  animation-duration        : 1s;
+  animation-iteration-count : 1;
+  animation-fill-mode       : forwards;
+}
+
+@keyframes hyenamoveup {
+  from {left: -600px; opacity:0.2;}
+  to {left: 75px; opacity:1;}
+}
+
+@keyframes hyenamoveback {
+  from {left: 75px; opacity:1;}
+  to {left: -600px; opacity:0.2;}
+}
+@keyframes talkboxadd {
+  from {opacity:00;}
+  to {opacity:1;}
+}
+
+@keyframes talkboxremove {
+  from {opacity:1;}
+  to {opacity:0;}
 }
 
 a:link {
